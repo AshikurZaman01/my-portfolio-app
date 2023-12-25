@@ -1,0 +1,98 @@
+/* Styles for navigation links in the header */
+header ul li a {
+    color: var(--title);
+    opacity: 0.9;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+/* Hover effect for navigation links */
+header ul li a:hover {
+    color: var(--bgBlue);
+    opacity: 1;
+}
+
+/* Styling for the main navigation bar */
+header nav {
+    background-color: var(--bgHeader);
+    padding: 0.77rem 1.6rem;
+    border-radius: 55px;
+    box-shadow: 1px 1px 40px #2323242a;
+}
+
+/* Hide the menu button by default */
+header .menu {
+    display: none;
+}
+
+/* Styles for the fixed position menu overlay */
+header .fixed {
+    position: fixed;
+    inset: 0;
+    z-index: 11;
+    background-color: rgba(40, 40, 48, 0.795);
+}
+
+/* Styles for the mobile menu */
+header .fixed ul.showModal {
+    animation: openModal 0.5s ease-in-out;
+    width: 85%;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary-color);
+}
+
+/* Keyframes for opening the mobile menu */
+@keyframes openModal {
+    0% {
+        scale: 0;
+    }
+
+    60% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+/* Styles for individual items in the mobile menu */
+header .fixed ul.showModal li {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem;
+}
+
+/* Styles for the first item in the mobile menu (close button) */
+header .fixed ul.showModal li:first-child {
+    text-align: right;
+    border: none;
+    border-bottom: 0;
+    padding-top: 0.2rem;
+}
+
+/* Styles for the last item in the mobile menu */
+header .fixed ul.showModal li:last-child {
+    border: none;
+}
+
+/* Styles for links in the mobile menu */
+header .fixed ul.showModal li a {
+    font-size: 1rem;
+}
+
+/* Media query for screens with a width of 700px or less */
+@media (max-width: 700px) {
+    /* Hide the main navigation bar */
+    header nav {
+        display: none;
+    }
+
+    /* Display the menu button */
+    header .menu {
+        display: block;
+    }
+}

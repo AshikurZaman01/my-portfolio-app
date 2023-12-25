@@ -1,27 +1,31 @@
 
 import './App.css'
-import About from './Components/Pages/About/About'
 import Contact from './Components/Pages/Contact/Contact'
-import Experinece from './Components/Pages/Experirnce/Experinece'
 import Footer from './Components/Pages/Footer/Footer'
 import Header from './Components/Pages/Header/Header'
-import Navbar from './Components/Pages/Navbar/navbar'
-import Services from './Components/Pages/Services/Services'
-import Testimonials from './Components/Pages/Testimonials/Testimonials'
+import Hero from './Components/Pages/Header/Hero/Hero'
+import Main from './Components/Pages/Main/Main'
+
 
 function App() {
 
   return (
-    <>
+    <div className='container'>
       <Header></Header>
-      <Navbar></Navbar>
-      <About></About>
-      <Experinece></Experinece>
-      <Services></Services>
-      <Testimonials></Testimonials>
+      <Hero></Hero>
+
+      <div className='divider'></div>
+
+      <Main></Main>
+
+      <div className='divider'></div>
+
       <Contact></Contact>
+
+      <div className='divider'></div>
+
       <Footer></Footer>
-    </>
+    </div>
   )
 }
 

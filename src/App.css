@@ -1,107 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+/* Set box-sizing to 'inherit' for all elements */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 
+/* Reset margin, padding, and set letter-spacing for all elements */
 * {
     margin: 0;
     padding: 0;
-    border: 0;
-    outline: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-
+    letter-spacing: 0.1px;
 }
 
+/* Define CSS custom properties for color palette */
 :root {
-    --color-bg: #712F79;
-    --color-bg-variant: #48639C;
-    --color-primary: #C77E80;
-    --color-primary-variant: #C77E80;
-    --color-white: #fff;
-    --color-light: #5F3E8B;
+    --primary-color: #000;
+    --secondary-color: rgb(24 24 27);
+    --border: rgba(63, 63, 70, 0.4);
+    --title: rgb(244 244 245);
+    --subTitle: rgb(161 161 170);
 
-    --container-width-lg: 75%;
-    --container-width-md: 80%;
-    --container-width-sm: 90%;
-
-    --transition: all 400ms ease;
-
+    --bgHeader: rgb(39, 39, 42);
+    --bgBlue: rgb(93, 188, 252);
 }
 
-html {
-    scroll-behavior: smooth;
+/* Define light theme by changing primary color */
+.light {
+    --primary-color: #fff;
 }
 
+/* Body styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--color-bg);
-    color: var(--color-white);
-    line-height: 1.7;
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
+/* Container styles */
 .container {
-    width: var(--container-width-lg);
-    margin: 0 auto;
+    border: 2px solid var(--border);
+    width: 80%;
+    margin: auto;
+    background: var(--secondary-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-weight: 500;
+/* Divider styles */
+.divider {
+    border-bottom: 1px solid var(--border);
+    padding-top: 22px;
 }
 
-h1 {
-    font-size: 2.5rem;
+/* Remove list styling */
+li {
+    list-style: none;
 }
 
-section {
-    margin-top: 8rem;
-}
-
-section>h2,
-section>h5 {
-    text-align: center;
-    color: var(--color-light);
-}
-
-section>h2 {
-    color: var(--color-primary);
-    margin-bottom: 3rem;
-}
-
-.text-light {
-    color: var(--color-light);
-}
-
+/* Link styles */
 a {
-    color: var(--color-primary);
-    transition: var(--transition);
+    text-decoration: none;
+    color: initial;
+    transition: 0.2s;
 }
 
-a:hover {
-    color: var(--color-white);
-}
-
-.btn {
-    width: max-content;
-    display: inline-block;
-    color: var(--color-primary);
-    padding: 0.75rem 1.25rem;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    border: 1px solid var(--color-primary);
-
-    transition: var(--transition);
-}
-
-.btn:hover {
-    background: var(--color-white);
-    color: var(--color-bg);
-    border-color: transparent;
-}
-
-.btn-primary {
-    background: var(--color-primary);
-    color: var(--color-bg);
+/* Example of a border class with a red border */
+.border {
+    border: 1px solid red;
 }
