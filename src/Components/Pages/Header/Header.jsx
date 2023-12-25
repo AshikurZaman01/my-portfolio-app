@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { IoMdArrowDropdownCircle, IoMdCloseCircle } from "react-icons/io";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 import './header.css'
 
 const Header = () => {
 
     // State to manage the open/close state of the mobile menu
     const [isOpen, setIsOpen] = useState(false);
+
 
     return (
         <div>
@@ -29,8 +31,10 @@ const Header = () => {
                     </ul>
                 </nav>
 
-                {/* Button for a light theme (assuming this is a theme switch) */}
-                <button className='text-xl btn btn-sm'>light</button>
+                {/* Button for a light theme  */}
+                <button className='text-xl btn btn-sm rounded-full'>
+                    <span className='moon'><BsFillMoonStarsFill /></span>
+                </button>
 
                 {/* Mobile Menu */}
                 {isOpen && (

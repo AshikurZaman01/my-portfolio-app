@@ -1,0 +1,14 @@
+.hero .avatar {
+    border: 2px solid darkorange;
+    box-shadow: 2px 2px 40px rgba(128, 128, 128, 0.582) inset;
+    margin-right: 0.6rem;
+}
+
+.verification {
+    color: var(--bgBlue);
+    font-size: 1.1rem;
+}
+
+.title {
+    letter-spacing: 3px;
+}

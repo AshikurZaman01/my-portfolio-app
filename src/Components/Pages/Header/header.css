@@ -31,6 +31,7 @@ header .fixed {
     inset: 0;
     z-index: 11;
     background-color: rgba(40, 40, 48, 0.795);
+    backdrop-filter: blur(3px);
 }
 
 /* Styles for the mobile menu */
@@ -86,6 +87,7 @@ header .fixed ul.showModal li a {
 
 /* Media query for screens with a width of 700px or less */
 @media (max-width: 700px) {
+
     /* Hide the main navigation bar */
     header nav {
         display: none;
@@ -95,4 +97,11 @@ header .fixed ul.showModal li a {
     header .menu {
         display: block;
     }
+}
+
+
+/* Styles for the theme */
+header .moon {
+    border: 1px solid rgba(244, 165, 96, 0.249);
+    cursor: pointer;
 }
