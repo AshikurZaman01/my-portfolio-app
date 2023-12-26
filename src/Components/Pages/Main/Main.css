@@ -24,3 +24,14 @@
 .left-section button:hover {
     opacity: 1;
 }
+
+.card {
+   border: 1px solid rgba(93, 188, 252, 0.3);
+   transition: 0.3s;
+}
+.card:hover{
+    border: 1px solid var(--bgBlue);
+    rotate: -1deg;
+    scale: 1.01;
+    cursor: pointer;
+}
