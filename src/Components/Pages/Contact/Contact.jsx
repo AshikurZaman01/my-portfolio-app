@@ -25,7 +25,7 @@ const Contact = () => {
                     <button className="submitt  ">Submit</button>
                 </form>
 
-                <div className="bg-gray-900 shadow shadow-gray-700 hidden md:block flex-grow p-10">
+                <div className="bg-gray-1000 shadow shadow-gray-600 hidden md:block flex-grow p-10">
                     <Canimation></Canimation>
                 </div>
 

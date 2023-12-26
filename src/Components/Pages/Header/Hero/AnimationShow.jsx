@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import animationData from '../../../../assets/images/Animation.json';
+import animationData from '../../../../assets/images/Animation - 1703599222463.json';
 
 const AnimationShow = () => {
     return (
