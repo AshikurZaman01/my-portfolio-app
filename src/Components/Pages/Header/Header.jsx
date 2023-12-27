@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { IoMdArrowDropdownCircle, IoMdCloseCircle } from "react-icons/io";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import './header.css'
@@ -7,6 +7,17 @@ const Header = () => {
 
     // State to manage the open/close state of the mobile menu
     const [isOpen, setIsOpen] = useState(false);
+    const [theme, setTheme] = useState('dark');
+
+    useEffect(() => {
+        if (theme === "light") {
+            document.body.classList.remove("dark");
+            document.body.classList.add("light");
+        } else {
+            document.body.classList.remove("light");
+            document.body.classList.add("dark");
+        }
+    }, [theme])
 
 
     return (
@@ -32,7 +43,12 @@ const Header = () => {
                 </nav>
 
                 {/* Button for a light theme  */}
-                <button className='text-xl btn btn-sm rounded-full'>
+                <button onClick={() => {
+
+                    localStorage.setItem('currentMode', theme === 'dark' ? 'light' : 'dark');
+                    setTheme(localStorage.getItem('currentMode'));
+
+                }} className='text-xl btn btn-sm rounded-full'>
                     <span className='moon'><BsFillMoonStarsFill /></span>
                 </button>
 
