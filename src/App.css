@@ -5,6 +5,10 @@
     box-sizing: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Reset margin, padding, and set letter-spacing for all elements */
 * {
     margin: 0;
@@ -65,3 +69,20 @@ a {
 .border {
     border: 1px solid red;
 }
+
+.scrollTop {
+    width: 2.6rem;
+    height: 2.6rem;
+    background-color: rgba(25, 118, 210, 0.85);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.scrollTop:hover {
+    background-color: rgb(25, 118, 210);
+}
+
+#up {}
