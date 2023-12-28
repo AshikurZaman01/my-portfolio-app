@@ -14,13 +14,31 @@ form #message {
     transition: 0.3s;
 }
 
+.light form #email,
+.light form #message {
+    background-color: rgba(255, 255, 255, 0.162);
+    border: 1px solid rgba(128, 128, b128lue, 0.415);
+    box-shadow: 1px 1px 1px rgba(73, 73, 75, 0.105);
+    color: #232323;
+}
+
 form #email:focus,
 form #message:focus {
     border: 1px solid rgb(45, 212, 191);
 }
 
+.light form #email:focus,
+.light form #message:focus {
+    border: 1px solid rgb(78, 80, 80);
+}
+
 form #email:hover,
 form #message:hover {
+    border: 1px solid rgb(45, 212, 191);
+}
+
+.light form #email:hover,
+.light form #message:hover {
     border: 1px solid rgb(45, 212, 191);
 }
 
@@ -32,7 +50,7 @@ form #message {
 .submitt {
     background-color: rgba(36, 37, 46, 1);
     width: 11rem;
-    padding:  0.75rem 2rem;
+    padding: 0.75rem 2rem;
     text-align: center;
     font-size: 1.05rem;
     text-transform: capitalize;
@@ -42,6 +60,6 @@ form #message {
     border: 1px solid rgb(63, 63, 70);
 }
 
-.submitt:hover{
+.submitt:hover {
     scale: 0.97;
 }

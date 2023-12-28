@@ -31,10 +31,10 @@ const Main = () => {
     };
 
     return (
-        <div>
-            <div className="flex justify-center items-start gap-2">
-                <div className="left-section w-[20%]">
-                    <div className="flex flex-col justify-start items-start gap-10">
+        <div className="container mx-auto p-4">
+            <div className="lg:flex justify-center items-cente gap-2">
+                <div className="left-section sm:w-[100%] md:w-[30%] lg:w-[20%] md:mb-0 mb-10 ">
+                    <div className="flex flex-col justify-start items-start gap-10 ">
                         <button
                             className={`buttons ${activeCategory === 'All Projects' ? 'active' : ''}`}
                             onClick={() => handleFilter('All Projects')}
@@ -42,8 +42,7 @@ const Main = () => {
                             All Projects
                         </button>
                         <button
-                            className={`buttons ${activeCategory === 'Tailwind CSS' ? 'active' : ''
-                                }`}
+                            className={`buttons ${activeCategory === 'Tailwind CSS' ? 'active' : ''}`}
                             onClick={() => handleFilter('Tailwind CSS')}
                         >
                             Tailwind CSS
@@ -52,11 +51,10 @@ const Main = () => {
                             className={`buttons ${activeCategory === 'Frontend' ? 'active' : ''}`}
                             onClick={() => handleFilter('Frontend')}
                         >
-                            Fontend
+                            Frontend
                         </button>
                         <button
-                            className={`buttons ${activeCategory === 'FullStack' ? 'active' : ''
-                                }`}
+                            className={`buttons ${activeCategory === 'FullStack' ? 'active' : ''}`}
                             onClick={() => handleFilter('FullStack')}
                         >
                             FullStack
@@ -64,8 +62,9 @@ const Main = () => {
                     </div>
                 </div>
 
-                <div className="right-section w-[70%]">
-                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto gap-10">
+
+                <div className="right-section w-[70%] mx-auto lg:mt-0 mt-10">
+                    <div className="grid lg:grid-cols-2  grid-cols-1  gap-10">
                         {filteredProjects.map((project, index) => (
                             <Card project={project} key={index}></Card>
                         ))}

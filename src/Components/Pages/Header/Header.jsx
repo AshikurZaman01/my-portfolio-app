@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { IoMdArrowDropdownCircle, IoMdCloseCircle } from "react-icons/io";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { MdWbSunny } from "react-icons/md";
 import './header.css'
 
 const Header = () => {
@@ -49,7 +50,7 @@ const Header = () => {
                     setTheme(localStorage.getItem('currentMode'));
 
                 }} className='text-xl btn btn-sm rounded-full'>
-                    <span className='moon'><BsFillMoonStarsFill /></span>
+                    <span className='moon'>{theme === "dark" ? <BsFillMoonStarsFill /> : <MdWbSunny />}</span>
                 </button>
 
                 {/* Mobile Menu */}

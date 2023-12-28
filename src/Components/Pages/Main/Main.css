@@ -21,15 +21,25 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
+.light .left-section button.active {
+    border: 1px solid #000;
+}
+
 .left-section button:hover {
     opacity: 1;
 }
 
 .card {
-   border: 1px solid rgba(93, 188, 252, 0.3);
-   transition: 0.3s;
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    transition: 0.3s;
 }
-.card:hover{
+
+.light .card {
+    border: 1px solid rgba(13, 14, 13, 0.349);
+    transition: 0.3s;
+}
+
+.card:hover {
     border: 1px solid var(--bgBlue);
     rotate: -1deg;
     scale: 1.01;

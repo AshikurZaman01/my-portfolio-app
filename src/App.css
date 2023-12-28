@@ -30,8 +30,8 @@ html {
 
 /* Define light theme by changing primary color */
 .light {
-    --primary-color: rgb(243, 225, 225);
-    --secondary-color: #f1dede;
+    --primary-color: rgb(250, 250, 250);
+    --secondary-color: rgb(255, 255, 255);
     --border: rgba(202, 202, 202, 0.518);
     --title: rgb(244 244 245);
     --subTitle: rgb(161 161 170);
