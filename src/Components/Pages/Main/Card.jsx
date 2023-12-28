@@ -9,10 +9,10 @@ const Card = ({ project }) => {
 
     return (
         <div className='mx-auto'>
-            <div className='w-[280px] card'>
+            <div className='lg:w-[350px] card'>
 
                 <div className='w-full h-[200px]'>
-                    <img className='w-full h-full rounded-xl' src={image} alt="" />
+                    <img className='w-full h-full rounded' src={image} alt="" />
                 </div>
 
                 <div className='mt-5 mb-5 p-2'>
